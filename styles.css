@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --primary: rgba(16, 20, 25, 0.9);
+    --secondary: rgba(30, 26, 44, 0);
+}
+
+.Displayimage {
+    /* background: linear-gradient(180deg, var(--primary), var(--secondary)); */
+    position: relative;
+    height: 800px;
+    width: 1100px;
+    /* height: 600px; */
+    /* width: 100%; */
+    justify-content: center;
+    text-align: center;
+    /* border-radius: 16%; */
+}
+
+.covidnoti {
+    background-color: #3a1a1d;
+    position: absolute;
+    color: white;
+    height: 72px;
+    width: 280px;
+    right: 0px;
+    top: 220px;
+    z-index: 2;
+    text-align: left;
+}
+
+.header {
+    background: linear-gradient(180deg, var(--primary), var(--secondary)), url("bkg.jpg");
+    /* filter: blur(4px); */
+    height: 730px;
+    justify-content: center;
+    text-align: center;
+}
+
+.display-text {
+    position: absolute;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    left: 150px;
+    top: 250px;
+    font-size: 30px;
+    border: 3px solid #f1f1f1;
+    color: aliceblue;
+    z-index: 2;
+}
+
+.display-text:hover {
+    background-color: #00000075;
+    opacity: 6;
+}
+
+.logoimage {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 10px;
+    top: 10px;
+}
+
+.navbar_1:hover {
+    background-color: #00000075;
+    opacity: 6;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar_1 {
+    /* background-color: #00000075; */
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    top: 10px;
+    color: #f1f1f1;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding: 25px;
+}
+
+#container {
+    position: absolute;
+    width: 65%;
+    top: 670px;
+    background-color: #010101;
+    /* box-shadow: -2px -2px 5px white, 2px -2px 5px white; */
+}
+
+#container>nav {
+    width: 100%;
+    display: flex;
+    max-height: 60px;
+}
+
+#logo {
+    line-height: 60px;
+    font-size: 30px;
+    padding: 0 50px;
+    color: white;
+    width: 40%;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px;
+}
+
+#container>nav>ul {
+    margin: 0;
+    paddding: 0;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    /*   min-width:60%; */
+}
+
+#container>nav>ul>li {
+    line-height: 60px;
+    margin: 0 0px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    /*   background-color:green; */
+    min-width: 120px;
+}
+
+#container>nav>ul>li>a {
+    position: relative;
+    /*   background-color:red; */
+    margin: 0 20px;
+    color: white;
+}
+
+#container>nav>ul>li:hover {
+    border-bottom: 2px solid white;
+    background-color: #0088ff;
+}
+
+#container>nav>ul>.dropdown:hover {
+    border-bottom: none;
+}
+
+#container>nav>ul>.dropdown:hover>.dd {
+    display: block;
+}
+
+.dropdown:hover>a .fa-caret-down {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container>nav>ul>li>div {
+    position: absolute;
+    padding: 0 10px;
+    background-color: black;
+    display: none;
+    background-color: aliceblue;
+    min-width: 100px;
+}
+
+#container>nav>ul>li>div>ul {
+    margin: 0px 0 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#u_a_c {
+    position: relative;
+    width: 100%;
+    /*   background-color:red; */
+}
+
+#up_arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 42%;
+    top: -10px;
+    background-color: aliceblue;
+    transform: rotate(45deg);
+}
+
+#container>nav>ul>li>div>ul>li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#container>nav>ul>li>div>ul>li>a {
+    padding: 5px;
+    color: black;
+}
+
+.Plantrip {
+    position: absolute;
+    top: 670px;
+    right: 60px;
+    background-color: #860038;
+    color: white;
+    height: 200px;
+    width: 500px;
+}
+
+.plantrip_list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.Search {
+    margin-top: 14px;
+    margin-left: 20px;
+    background-color: #5b0026;
+    width: 120px;
+}
+
+.plantrip_bottom {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.deer {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 140%;
+}
+
+.imgd {
+    height: 350px;
+    width: 500px;
+    z-index: 2;
+    position: absolute;
+    padding-top: 20px;
+    left: 340px;
+}
+
+.imge1 {
+    height: 250px;
+    width: 350px;
+    position: absolute;
+    z-index: 2;
+    top: 1280px;
+    right: 310px;
+}
+
+.imge {
+    height: 320px;
+    width: 620px;
+    position: absolute;
+    z-index: 2;
+    right: 40px;
+    top: 920px;
+}
+
+.imgc {
+    height: 300px;
+    width: 340px;
+    position: absolute;
+    z-index: 2;
+    top: 1130px;
+    left: 490px;
+}
+
+.img1 {
+    width: 100%;
+    height: 360px;
+}
+
+.img1div {
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    top: 1636px;
+}
+
+.img1text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #fff;
+}
+
+.Location {
+    background-image: url(l1.png);
+    position: absolute;
+    top: 1990px;
+    text-align: center;
+    /* left: 380px; */
+    width: 100%;
+}
+
+.table1 {
+    /* position: absolute; */
+    padding-top: 60px;
+    padding-left: 280px;
+    padding-bottom: 140px;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.ta_img {
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+}
+
+.tarow {
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.ta_des {
+    width: 600px;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.ta_imgs {
+    padding-right: 40px;
+    padding-bottom: 100px;
+}
+
+.footer1 {
+    position: absolute;
+    top: 3240px;
+    background-image: url("footerbg.jpg");
+    height: 300px;
+    width: 100%;
+}
+
+.footerimg {
+    width: 100px;
+    position: absolute;
+    height: 200px;
+    top: 30px;
+}
+
+.footertext {
+    color: #fff;
+    position: absolute;
+    top: 160px;
+    left: 440px;
+}
+
+
+/* .Images {
+    background-image: url("Deer.jpg");
+} */
